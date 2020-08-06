@@ -1,7 +1,7 @@
 # NSE Yahoo Finance - Financial Statements Scraper
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 
 
