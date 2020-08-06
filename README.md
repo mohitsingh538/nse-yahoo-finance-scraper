@@ -7,7 +7,7 @@
 
 # Introduction
 
-This script scarpes Yahoo Finance & downloads income statement, balance sheet & cash flow statement in csv. Automatically creates directory with symbol name in your save-to-path folder to save all downloaded data.
+This script scrapes Yahoo Finance & downloads income statement, balance sheet & cash flow statement in csv. Automatically creates directory with symbol name in your save-to-path folder to save all downloaded data.
 
 I prefer running this script on [Google Colab](https://colab.research.google.com/), so I will further talk you through the steps to run this script on Colab Notebook.
 
@@ -58,7 +58,7 @@ Close the tab and run
 ```
 It will start creating folders dynamically inside /content/nse-yahoo-finance-scraper. Folder will be created with the symbols passed in`symbol = []` In each folder you will find all the scraped information in a clean csv format of the particular company.
 
-Please don't use more than 30-40 symbols at a time. It is recommeneded lest you should get blocked by Yahoo. The script generates random proxies using fake-headers library, but don't misuse it for scraping unnecessary data.
+Please don't use more than 30-40 symbols at a time. It is recommended lest you should get blocked by Yahoo. The script generates random proxies using fake-headers library, but don't misuse it for scraping unnecessary data.
 
 ### Downloading on Google Drive
 If you are planning to utilise the data for future use, consider downloading it on Google Drive. We will mount our Google drive on this notebook so that data could be directly downloaded. To do that, click on the Google Drive icon. It will ask for permission to mount the drive. Click on **Connect to Google Drive** to grant access.
