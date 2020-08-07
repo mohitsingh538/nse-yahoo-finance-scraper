@@ -73,7 +73,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'cash_flow_{symbol}.csv')
+        sheet_name = str(f'cash_flow_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
@@ -124,7 +124,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'income_statement_{symbol}.csv')
+        sheet_name = str(f'income_statement_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
@@ -175,7 +175,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'balance_sheet_{symbol}.csv')
+        sheet_name = str(f'balance_sheet_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
