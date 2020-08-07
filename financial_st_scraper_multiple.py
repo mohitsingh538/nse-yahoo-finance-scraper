@@ -69,7 +69,7 @@ symbol = ['3MINDIA', 'ABB', 'ACC', 'AIAENG', 'APLAPOLLO', 'AUBANK', 'AARTIIND', 
           'WHIRLPOOL', 'WIPRO', 'WOCKPHARMA', 'ZEEL', 'ZENSARTECH', 'ZYDUSWELL', 'ECLERX']
 
 
-def dir_create():
+def dir_create(symbol):
     # base dir
     _dir = "/path/to/save/folder/"
 
@@ -96,7 +96,7 @@ def sp_headers():
             header.generate()
 
 
-def scrape():
+def scrape(symbol):
     # Scraping Cash Flow
     def cash_flow():
         url_cf = f'https://in.finance.yahoo.com/quote/{symbol}.NS/cash-flow?p={symbol}.NS'
@@ -142,7 +142,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'cash_flow_{symbol}.csv')
+        sheet_name = str(f'cash_flow_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
@@ -193,7 +193,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'income_statement_{symbol}.csv')
+        sheet_name = str(f'income_statement_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
@@ -244,7 +244,7 @@ def scrape():
         df
 
         path = f'/path/to/save/folder/{symbol}'
-        sheet_name = str(f'balance_sheet_{symbol}.csv')
+        sheet_name = str(f'balance_sheet_{symbol}.xlsx')
         writer = pd.ExcelWriter(sheet_name)
         writer = os.path.join(path, writer)
         df.to_excel(writer)
