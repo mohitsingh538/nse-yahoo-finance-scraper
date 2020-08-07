@@ -7,7 +7,7 @@
 
 # Introduction
 
-This script scrapes Yahoo Finance & downloads income statement, balance sheet & cash flow statement in csv. Automatically creates directory with symbol name in your save-to-path folder to save all downloaded data.
+This script scrapes Yahoo Finance & downloads income statement, balance sheet & cash flow statement in Excel file. Automatically creates directory with symbol name in your save-to-path folder to save all downloaded data.
 
 I prefer running this script on [Google Colab](https://colab.research.google.com/), so I will further talk you through the steps to run this script on Colab Notebook.
 
@@ -47,7 +47,7 @@ Close the tab and run
 ```bash
 !python financial_st_scraper.py
 ```
-It will create a folder with the symbol name inside /content/nse-yahoo-finance-scraper. In the folder you will find all the scraped information in a clean csv format.
+It will create a folder with the symbol name inside /content/nse-yahoo-finance-scraper. In the folder you will find all the scraped information in a clean Excel format.
 
 2. If you wish to scrape data for only **multiple symbols**, double click on financial_st_scraper_multiple.py. A new tab will open the file. Search for /path/to/save/folder/ and replace it with /content/nse-yahoo-finance-scraper/.
 By default, the script has a list of symbols of NIFTY500 companies. You can add/remove symbols of your choice. Changes will be saved automatically.
@@ -56,7 +56,7 @@ Close the tab and run
 ```bash
 !python financial_st_scraper_multiple.py
 ```
-It will start creating folders dynamically inside /content/nse-yahoo-finance-scraper. Folder will be created with the symbols passed in`symbol = []` In each folder you will find all the scraped information in a clean csv format of the particular company.
+It will start creating folders dynamically inside /content/nse-yahoo-finance-scraper. Folder will be created with the symbols passed in`symbol = []` In each folder you will find all the scraped information in a clean Excel format of the particular company.
 
 Please don't use more than 30-40 symbols at a time. It is recommended lest you should get blocked by Yahoo. The script generates random proxies using fake-headers library, but don't misuse it for scraping unnecessary data.
 
