@@ -1,7 +1,8 @@
 # NSE Yahoo Finance - Financial Statements Scraper
 
 
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/YahooFinanceLogo.png" width="300px">
 
 
 
@@ -77,4 +78,4 @@ After running the script, all the information would be downloaded directly to yo
 
 ### Contact
 
-**Issues should be raised directly in the repository.** For additional questions or comments please email me at mohit@ohlc.ai
+**Issues should be raised directly in the repository.**
